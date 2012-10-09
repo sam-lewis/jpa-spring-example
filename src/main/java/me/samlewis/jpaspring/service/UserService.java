@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-@Repository(value = "employeeService")
+@Repository
 public class UserService extends AbstractJpaService<User> {
     public UserService() {
         super(User.class);
