@@ -8,7 +8,10 @@
     </welcome-file-list>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:me/samlewis/jpaspring/applicationContext*.xml</param-value>
+        <param-value>
+            classpath:me/samlewis/jpaspring/applicationContext-infra.xml
+            classpath:me/samlewis/jpaspring/applicationContext-ws.xml
+        </param-value>
     </context-param>
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
